@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+header ul {
+    display: flex;
+    justify-content: right;
+    padding: 10px;
+    background-color: #21213b;
+    color: cyan;
+}
+
+a {
+    text-decoration: none;
+    color: cyan;
+}
+
+a:hover {
+    background: cyan;
+    color: #21213b;
+}
+
+a:visited {
+    background-color: magenta;
+}
+
+header ul li {
+    padding: 10px;
+    margin: 10px;
+    list-style: none;
+}
+
+#home-container {
+    background: url(https://plus.unsplash.com/premium_photo-1679079456083-9f288e224e96?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    height: calc(100vh - 5rem);
+    margin-top: 4.8rem;
+    background-size: cover;
+}
+
+#another-cont {
+    width: 100%;
+    height: 100%;
+    background-color: #21213b;
+    opacity: 0.8;
+    text-align: center;
+    padding-top: 10rem;
+}
+
+h1 {
+    color: magenta;
+    margin: 10px;
+    text-align: center;
+}
+
+#home-container h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    color: cyan;
+}
+
+#about-container {
+    height: calc(100vh - 4.8rem);
+    margin: 3rem auto auto auto;
+    padding-top: 5rem;
+    text-align: center;
+}
+
+#about-container p {
+    font-size: large;
+}
+
+#profile-pic {
+    width: 20%;
+    border-radius: 50%;
+}
+
+#works {
+    padding: 4rem;
+}
+
+#works-container {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+iframe {
+    margin: 10px;
+    width: 20rem;
+}
+
+#contact-container {
+    height: 50vh;
+    width: 100%;
+    padding: 1.5rem;
+    background-color: #21213b;
+}
+
+#contact-container a {
+    display: flex;
+    width: 10rem;
+    color: magenta;
+    align-items: center;
+    margin: 10px auto;
+    justify-content: center;
+}
+
+#contact-container p {
+    text-align: center;
+    color: cyan;
+    padding-bottom: 10px;
+}
