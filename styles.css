@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+body {
+    background-color: rgb(201, 198, 198);
+}
+
 header {
     width: 100%;
     position: fixed;
@@ -21,15 +25,20 @@ header ul {
 
 a {
     text-decoration: none;
+    display: inline-block;
     color: cyan;
+    border-radius: 5px;
+    padding: 2px;
+    transition: 0.7s ease;
 }
 
 a:hover {
     background: cyan;
     color: #21213b;
+    transform: scale(1.1);
 }
 
-a:visited {
+a:focus {
     background-color: magenta;
 }
 
@@ -59,6 +68,7 @@ h1 {
     color: magenta;
     margin: 10px;
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 #home-container h1 {
@@ -80,13 +90,26 @@ h2 {
     font-size: large;
 }
 
+#about-container p:hover::before {
+    content: '"'
+}
+
+#about-container p:hover::after {
+    content: '"'
+}
+
 #profile-pic {
     width: 20%;
     border-radius: 50%;
+    transition: 0.3s;
+}
+
+#profile-pic:hover {
+    transform: scale(1.1);
 }
 
 #works {
-    padding: 4rem;
+    padding: 2rem;
 }
 
 #works-container {
@@ -96,13 +119,65 @@ h2 {
     justify-content: center;
 }
 
-iframe {
-    margin: 10px;
+.card {
+    margin: 15pt;
     width: 20rem;
+    height: 15rem;
+    background-color: gray;
+    border-radius: 10px;
+    padding-top: 10px;
+    box-shadow: 1rem 1rem 1rem rgb(94, 92, 92);
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.caption {
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 5px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.card img {
+    width: 100%;
+    height: 70%;
+}
+
+#play-card {
+    width: 80%;
+    height: 70%;
+    margin: auto;
+    border-radius: 20px;
+    background-color: gray;
+}
+
+.player {
+    width: 100%;
+    height: 80%;
+}
+
+.top {
+    height: 19%;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    background-color: gray;
+}
+
+.top .fa-solid {
+    padding: 20px;
+    font-size: 1.5rem;
+}
+
+.fa-solid:hover {
+    cursor: pointer;
 }
 
 #contact-container {
-    height: 50vh;
+    height: 55vh;
     width: 100%;
     padding: 1.5rem;
     background-color: #21213b;
@@ -111,10 +186,16 @@ iframe {
 #contact-container a {
     display: flex;
     width: 10rem;
-    color: magenta;
+    color: cyan;
     align-items: center;
     margin: 10px auto;
     justify-content: center;
+}
+
+#contact-container a:hover {
+    background-color: magenta;
+    color: #21213b;
+    transform: translate(20px);
 }
 
 #contact-container p {
