@@ -222,6 +222,7 @@ h2 {
     border-radius: 20px 10px 15px 25px;
     transform: skew(5deg);
     box-shadow: 2px 2px 5px 5px;
+    margin-bottom: 1.5rem;
 }
 
 .core-skills ul li,
