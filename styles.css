@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: monospace;
 }
 
 body {
@@ -38,7 +39,7 @@ a:hover {
     transform: scale(1.1);
 }
 
-a:focus {
+a:active {
     background-color: magenta;
 }
 
@@ -49,30 +50,32 @@ header ul li {
 }
 
 #home-container {
-    background: url(https://plus.unsplash.com/premium_photo-1679079456083-9f288e224e96?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-color: #21213b;
     height: calc(100vh - 5rem);
     margin-top: 4.8rem;
     background-size: cover;
 }
 
-#another-cont {
-    width: 100%;
+#home-video {
+    min-width: 100%;
+    max-width: 100%;
+    object-fit: contain;
     height: 100%;
-    background-color: #21213b;
-    opacity: 0.8;
-    text-align: center;
-    padding-top: 10rem;
 }
 
 h1 {
     color: magenta;
     margin: 10px;
+    padding-top: 10px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding-bottom: 10px;
 }
 
 #home-container h1 {
+    display: block;
     font-size: 2.5rem;
+    padding-bottom: 10px;
 }
 
 h2 {
@@ -80,14 +83,13 @@ h2 {
 }
 
 #about-container {
-    height: calc(100vh - 4.8rem);
     margin: 3rem auto auto auto;
     padding-top: 5rem;
     text-align: center;
 }
 
 #about-container p {
-    font-size: large;
+    font-size: 1.5rem;
 }
 
 #about-container p:hover::before {
@@ -202,4 +204,58 @@ h2 {
     text-align: center;
     color: cyan;
     padding-bottom: 10px;
+}
+
+.skills-container {
+    display: flex;
+    max-width: 800px;
+    margin: 20px auto;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.core-skills,
+.computer-skills {
+    width: 25rem;
+    padding: 2.5rem;
+    background-color: white;
+    border-radius: 20px 10px 15px 25px;
+    transform: skew(5deg);
+    box-shadow: 2px 2px 5px 5px;
+}
+
+.core-skills ul li,
+.computer-skills ul li {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    text-align: left;
+    padding: 5px;
+    font-size: 1.5rem;
+}
+
+.core-skills ul li img,
+.computer-skills ul li img {
+    width: 1.5rem;
+    height: 1rem;
+    padding-top: 2px;
+}
+
+.core-skills h2,
+.computer-skills h2 {
+    border-bottom: 1px double red;
+    color: magenta;
+    box-shadow: 2px 2px 2px 2px;
+}
+
+#about-container p {
+    display: block;
+    padding: 2rem;
+    width: 80%;
+    margin: auto;
+}
+
+#contact-container p {
+    color: aliceblue;
+    font-size: 1.5rem;
 }
